@@ -1,0 +1,350 @@
+/* Reset general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f9;
+  color: #222;
+}
+
+/* Header */
+header {
+  position: relative;
+  background: url("IMG/IMG.LOGO/yamaha_virago_yamaha_motorcycle_924462_1920x1080.jpg") 
+              no-repeat center center/cover;
+  
+  height: 350px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 45px;
+}
+
+/* Nav principal */
+nav {
+  background: linear-gradient(135deg, #0d0d0d, #1c1c1c, #2e2e2e);
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+}
+
+nav ul li a.active {
+  color: #ff4d4d;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+nav ul li a:hover {
+  color: #ff4d4d;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Títulos */
+.titulo-seccion {
+  text-align: center;
+  color: #e30613;
+  margin: 2rem 0 1rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0 auto 2rem;
+  max-width: 700px;
+}
+
+/* Grid de motos */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #e30613;
+}
+
+.precio {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #b6313e;
+}
+
+footer {
+  background: rgba(25, 26, 31, 0.95);
+  color: #fff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 1rem;
+  
+}
+
+.footer-center p {
+  margin: 0.5rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-item img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-item img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+.social-item span {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  header {
+    height: 300px;
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+  }
+
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 1.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav {
+    padding: 10px 15px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  header {
+    height: 250px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+  }
+
+  .social-item span {
+    font-size: 0.8rem;
+  }
+}

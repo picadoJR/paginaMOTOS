@@ -1,0 +1,385 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  color: #222;
+}
+
+/* Header */
+header {
+  position: relative;
+  background: url("IMG/IMG.LOGO/yamaha_virago_yamaha_motorcycle_924462_1920x1080.jpg") 
+              no-repeat center center/cover;
+  
+  height: 350px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 45px;
+}
+
+
+
+
+nav {
+  background: #111;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: #ff4d4d;
+}
+
+
+
+main.contacto {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+main.contacto h2 {
+  color: #e30613;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main.contacto p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contacto label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-contacto button {
+  background: #e30613;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-contacto button:hover {
+  background: #b1050f;
+}
+
+eader {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background: linear-gradient(135deg, #0d0d0d, #1c1c1c, #2e2e2e);
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+}
+
+/* Efecto hover con subrayado animado */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+nav ul li a:hover {
+  color: #ff4d4d;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+footer {
+  background: rgba(25, 26, 31, 0.95);
+  color: #fff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 1rem;
+}
+
+.footer-center p {
+  margin: 0.5rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-item img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-item img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+.social-item span {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  header {
+    height: 300px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  nav ul {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .form-contacto input,
+  .form-contacto textarea {
+    font-size: 0.95rem;
+  }
+
+  .form-contacto button {
+    font-size: 0.95rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    padding: 1rem 0;
+  }
+}
+
+/* Móviles (hasta 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  main.contacto {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .form-contacto input,
+  .form-contacto textarea {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .form-contacto button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  header {
+    height: 250px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .social-item img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    height: 220px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  main.contacto h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-contacto label {
+    font-size: 0.95rem;
+  }
+
+  .form-contacto input,
+  .form-contacto textarea {
+    font-size: 0.9rem;
+  }
+
+  .form-contacto button {
+    font-size: 0.95rem;
+  }
+
+  .social-item span {
+    font-size: 0.8rem;
+  }
+
+  .social-item img {
+    width: 32px;
+    height: 32px;
+  }
+}
